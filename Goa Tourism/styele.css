@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* Navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    padding-left: 600px;
+    height: 70px;
+
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    padding-top: 28px;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    padding-top: 28px;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(92, 92, 92);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(92, 92, 92, 0.384);
+    min-width: 160px;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    color: black;
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+
+
+.main-stuff {
+    text-align: center;
+    margin-top: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+}
+
+.main-title {
+    font-size: 80px;
+    font-weight: 600;
+    font-family:  Poppins, sans-serif;
+}
+
+
+
+/* Main Image */
+.main{
+    height: 980px;
+    background-image: url("./Images/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.267);
+    height: 100%;
+    padding: 50px;
+}
+
+/* Comman */
+.pitch-title {
+    text-align: center;
+    font-family: 'Moon Dance', cursive;
+    font-size: 50px;
+    padding-top: 20px;
+    
+}
+.pitch-info {
+    font-size: 15px;
+}
+.pitch-overlay {
+    background-color: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(5px);
+    height: 100%;
+    color: white;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: all 0.3s ease-out;
+}
+.pitch-item, .pitch-img {
+    overflow: hidden;
+    height: 250px;
+    width: 400px;
+}
+.pitch-item:hover .pitch-overlay,.pitch-img:hover .pitch-overlay {
+    transform: translateY(0);
+}
+
+.title-bar-inner {
+    margin-top: 18px;
+    height: 3px;
+    background: linear-gradient(to right, #fcac20, #ff0017, #1961ab);
+    background: -webkit-linear-gradient(left, #fcac20, #ff0017, #1961ab);
+    background: -o-linear-gradient(right, #fcac20, #ff0017, #1961ab);
+    background: -moz-linear-gradient(right, #fcac20, #ff0017, #1961ab);
+    background: linear-gradient(to right, #fcac20, #ff0017, #1961ab);
+    width: 150px;
+    margin: 0 auto;
+}
+
+
+
+/* Culture */
+.main-culture{
+    padding-top: 20px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;  
+    padding-bottom: 20px;
+}
+.culture{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 60px;
+    flex-direction: row;
+}
+.pitch-heading-culture{
+    font-size: 40px;
+    margin-top: 76px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.pitch-item-1-culture {
+    background-image: url("./Images/langauage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-2-culture {
+    background-image: url("./Images/religion.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-3-culture {
+    background-image: url("./Images/hadicrafts.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* Adventure */
+.main-adventure{
+    background-color: rgb(218, 218, 218);
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 0px;
+    padding: 0;
+}
+.adventure{
+    margin-top: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;    
+    gap: 40px;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+.pitch-heading-adventure{
+    font-size: 40px;
+    margin-top: 76px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.pitch-item-1-adventure  {
+    background-image: url("./Images/adventure1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-2-adventure  {
+    background-image: url("./Images/adventure2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-3-adventure  {
+    background-image: url("./Images/adventure3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-4-adventure  {
+    background-image: url("./Images/adventure4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-5-adventure  {
+    background-image: url("./Images/adventure5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-6-adventure  {
+    background-image: url("./Images/adventure7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-7-adventure  {
+    background-image: url("./Images/adventure6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* Food */
+.main-food{
+    padding-top: 20px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;  
+    padding-bottom: 28px;
+}
+.food{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 60px;
+    flex-direction: row;
+}
+.pitch-heading-food{
+    font-size: 40px;
+    margin-top: 76px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.pitch-item-1-food {
+    background-image: url("./Images/food1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-2-food {
+    background-image: url("./Images/food2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-3-food {
+    background-image: url("./Images/food3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* Adventure */
+.main-festival{
+    background-color: rgb(218, 218, 218);
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 0px;
+    padding: 0;
+}
+.festival{
+    margin-top: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;    
+    gap: 40px;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+.pitch-heading-festival{
+    font-size: 40px;
+    margin-top: 76px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.pitch-item-1-festival  {
+    background-image: url("./Images/festival1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-2-festival  {
+    background-image: url("./Images/festival2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-3-festival  {
+    background-image: url("./Images/festival3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-4-festival  {
+    background-image: url("./Images/festival4.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-5-festival  {
+    background-image: url("./Images/festival5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-6-festival  {
+    background-image: url("./Images/festival6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pitch-item-7-festival  {
+    background-image: url("./Images/festival7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.plan-card {
+    width: 400px;
+    padding: 28px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    backdrop-filter: blur(2.5px);
+    color: rgb(0, 0, 0);
+    height: 350px;
+    font-size: 20px;
+    
+    
+}
+.plan-title {
+    text-align: center;
+    font-size: 26px;
+}
+.plan-price {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:800;
+    backdrop-filter:blur(15px) ;
+}
+.plan-description {
+    text-align: center;
+    font-size: 18px;
+}
+.plans-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding: 50px;
+}
+.read-more {
+    text-align: center;
+    background-color: #d83838;
+    padding: 15px;
+    border-radius: 14px;
+    color: white;
+    width: 200px;
+    cursor: pointer;
+}
+.read-more:hover{
+    background-color: #da4e4e;
+}
+.trip-plans {
+background-color: white;
+
+}
